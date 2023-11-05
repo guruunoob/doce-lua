@@ -1,4 +1,4 @@
-<h1 align="center">Lune</h1>
+<h1 align="center">DoceLua</h1>
 
 
 A programming-language based in [Lua](https://github.com/lua/lua/).
