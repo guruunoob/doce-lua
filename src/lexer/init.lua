@@ -18,6 +18,9 @@ function Lexer.new(source: string)
     local self = setmetatable({}, Lexer)
 
     --// Utils
+    function self:source(): string
+        return source
+    end
     function self:next(): boolean
         index += 1
     end

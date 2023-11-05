@@ -19,8 +19,16 @@ export type Char = Token & {
     char: string,
 }
 
+export type String = Token & {
+    text: string
+}
+
 export type Operator = Token & {
     operator: string,
+}
+
+export type Boolean = Token & {
+    value: boolean
 }
 
 
@@ -195,7 +203,7 @@ function LexerReference:tokenize()
 
         local token = self:scanToken()
 
-        print("token:", token)
+        print("lexer token:", token)
 
         table.insert(tokens, token)
     end
